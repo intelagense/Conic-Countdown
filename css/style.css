@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END OF RESET */
+:root {
+    --primary: rgb(222,113,93);
+    --secondary: rgb(228,149,138);
+    --tertiary: rgb(136,48,56);
+    --accent: rgb(234,225,165);
+    --best-black: #070606;
+    --clear: #0000;
+
+    --degree: 0deg;
+}
+
+html
+body{
+    background: var(--primary);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    color: var(--best-black);
+
+    height: 100vh;
+    width: 100%;
+    
+    background: conic-gradient( 
+        var(--secondary) var(--degree), var(--clear) var(--degree)
+        );
+
+    
+}
+
+h1{
+    font-size: clamp(3rem, 0.7500rem + 10.0000vw, 10vw);
+}
+
+
+
+h2{
+    font-family: 'Covered By Your Grace', cursive;
+    position: absolute;
+    margin: 0 auto;
+    font-size: clamp(3rem, 0.7500rem + 10.0000vw, 16em);
+}
+p{
+    font-size: 3rem;
+}
+
+button{
+    z-index: 1;
+    margin: 10px 20px;
+    background-color: var(--tertiary); /* Green */
+    border: none;
+    color: var(--accent);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 33px;
+}
+
+
+header,
+footer{
+    display: none;
+    background: var(--tertiary);
+    color: var(--accent);
+    height: 40px;
+    /* line-height to vertically center text */
+    line-height: 40px; 
+    text-align: center;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+dialog{
+    background: var(--accent);
+    border-radius: 25px;
+    text-align: center;
+}
+dialog p{
+    font-size: 2rem;
+}
+form div{
+    text-align: center;
+}

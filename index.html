@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="fixed-top">
+        test
+    </header>
+    <main>
+        <h1 id="headline">Be Right Back</h1>
+        <h2 id="time">PAUSED</h2>
+        <div>
+            <button id="pause">Pause</button>
+            <button id="updateDetails">Options</button>
+        </div>
+        <dialog id="headlineDialog">
+            <form method="dialog">
+                <p><label>Title:
+                <input id="headlineText" type="text" maxlength="25">    
+                </label></p>
+                <p><label>Minutes:
+                    <input id="min" type="number" min="1" max="99">    
+                    </label></p>
+                <div>
+                    <button value="cancel">Cancel</button>
+                    <button id="confirmBtn" value="default">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+
+    </main> 
+    
+    <footer class="fixed-bottom">
+        test
+    </footer>  
+
+</body>
+<script src="js/main.js"></script>
+</html>
